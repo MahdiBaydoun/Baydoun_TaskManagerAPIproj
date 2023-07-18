@@ -12,6 +12,11 @@ namespace Baydoun_TaskManagerAPIproj
         {
             optionsBuilder.UseSqlite("Data Source=" + Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Tasks.db");
         }
+
+        public static implicit operator Task(TaskDbcontext v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 
